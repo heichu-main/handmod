@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "handmod",
+  "version": "${version}",
+  "name": "Hand Customizer",
+  "description": "GUI для настройки положения рук (и предметов в них) от первого лица.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.handmod.HandMod"]
+  },
+  "mixins": [
+    { "config": "handmod.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
